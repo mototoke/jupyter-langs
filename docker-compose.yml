@@ -1,7 +1,9 @@
 version: "3"
 services:
   jupyter:
-    image: ghcr.io/heromo/jupyter-langs:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./notebooks:/jupyter/notebooks
     ports:
