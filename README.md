@@ -10,6 +10,7 @@ Docker images of Jupyter Lab for various languages.
 |---|--:|---|
 | Python|3.8.6|[IPython](https://ipython.org/)|
 | C#(.Net5)| 9.0 | [.NET Interactive](https://github.com/dotnet/interactive)|
+| C++| 11/14/17 | [xeus-cling](https://github.com/jupyter-xeus/xeus-cling)|
 | Elixir|1.11.2|[ierl](https://github.com/filmor/ierl)|
 | Erlang|OTP 23.2.1|[ierl](https://github.com/filmor/ierl)|
 | F#(.Net5)| 5.0 | [.NET Interactive](https://github.com/dotnet/interactive)|

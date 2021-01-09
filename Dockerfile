@@ -193,6 +193,9 @@ RUN conda clean --all \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+RUN dotnet tool install -g --add-source "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json" Microsoft.dotnet-interactive \
+    && dotnet interactive jupyter install
+
 # # Install CPP(xeus-cling)
 RUN conda install -y -c conda-forge xeus-cling xtensor
 
@@ -200,6 +203,3 @@ RUN conda install -y -c conda-forge xeus-cling xtensor
 RUN jupyter labextension install \
             @lckr/jupyterlab_variableinspector \
             @jupyterlab/toc
-
-RUN dotnet tool install -g --add-source "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json" Microsoft.dotnet-interactive \
-    && dotnet interactive jupyter install
