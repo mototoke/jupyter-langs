@@ -52,11 +52,7 @@ RUN conda install -y -c conda-forge  \
                 matplotlib \
                 tensorflow \
                 keras \
-<<<<<<< HEAD
-                jupyterlab=3 \
-=======
                 jupyterlab=2.2 \
->>>>>>> 049cf8aa196c7011172b18cb642472c4e2d36d0e
                 libiconv \
                 ipywidgets=7.5 \
                 ipyleaflet \
